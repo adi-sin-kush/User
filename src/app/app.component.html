@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="cAcc">
+  <app-auth-form
+            (submitted)="createUser($event)">
+          <h3>Create Account</h3>
+          </app-auth-form>
+  </div>
+  
+  <div class="lAcc">
+  <app-auth-form
+            (submitted)="loginUser($event)">
+          <h3>Login</h3>
+          </app-auth-form>
+  </div>
+</div>
