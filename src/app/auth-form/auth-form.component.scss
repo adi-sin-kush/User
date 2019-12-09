@@ -21,20 +21,25 @@ div{
                 font-family: 'Roboto', sans-serif;
             }
         }
-        button{
-            width: 70px;
-            margin-top: 12px;
-            cursor: pointer;
-            float: right;
-            border-radius: 10px;
-            background: #192A56;
-            color: white;
-            border: none;
-            padding: 14px;
-            font-size: 15px;
-            font-weight: 550;
-            font-family: 'Roboto', sans-serif;
-            // text-transform: capitalize;
-        }
     }
+}
+
+.resrem{
+    display: inline;
+    font-size: 12px;
+    margin-left: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: blue;
+}
+
+.checki{
+    margin-left: 12px;
+    margin-right: 7px;
+}
+span{
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
 }

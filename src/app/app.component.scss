@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cantarell&display=swap');
+
+h1{
+    font-family: 'Cantarell', sans-serif;
+    margin: 20px 40px;
+    font-weight: 500;
+    display: inline-block;
+    border-bottom: 2px solid;
+}
+
 .container{
     display: flex;
-    margin: 100px 12px;
+    margin: 50px 12px;
     padding: 12px;
     justify-content: space-around;
     .cAcc{
@@ -16,5 +27,20 @@
     h3{
         font-family: 'Rubik', sans-serif;
         font-weight: 580;
+    }
+    button{
+        width: 80px;
+        margin-top: 12px;
+        cursor: pointer;
+        float: right;
+        border-radius: 10px;
+        background: #192A56;
+        color: white;
+        border: none;
+        padding: 14px;
+        font-size: 15px;
+        font-weight: 550;
+        font-family: 'Roboto', sans-serif;
+        // text-transform: capitalize;
     }
 }

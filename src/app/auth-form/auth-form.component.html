@@ -1,16 +1,22 @@
 <div>
-    <form (ngSubmit)="onSubmit()">
-        <ng-content></ng-content>
+    <form (ngSubmit)="onSubmit(form.value)"  #form="ngForm">
+        <ng-content select="h3"></ng-content>
         <label>
             <span>Email Address</span><br>
-            <input type="email" name="email">
+            <input type="email" name="email" autocomplete="off" ngModel> 
         </label> <br>
         <label>
             <span>Password</span><br>
-            <input type="password" name="password">
+            <input type="password" name="password" autocomplete="off" ngModel>
         </label> <br>
-        <button type="submit">
-            submit
-        </button>
+        <ng-content select="app-arem"></ng-content><br>
+        <app-amess  
+                [ngStyle]="{'display': showMessage ? 'inherit':'none'}"
+                [ngClass]="{'resrem': true}">
+                </app-amess>
+        <!-- <div class="resrem" *ngIf="showMessage">
+            You will be Logged In for 30 days !!
+        </div> -->
+        <ng-content select="button"></ng-content>
     </form>
 </div>

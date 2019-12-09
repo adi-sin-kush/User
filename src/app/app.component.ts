@@ -7,12 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  checked = false;
+
   createUser(user) {
     console.log('create account', user);
   }
 
-  LoginUser(user) {
+  loginUser(user) {
     console.log('Login', user);
+    console.log('Remember Me??', this.checked);
+  }
+
+  RememberMe(value: boolean) {
+    this.checked = value;
   }
 
 }
